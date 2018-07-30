@@ -7,12 +7,15 @@ sudo apt update
 
 # Install Tools
 
-sudo apt install tmux zsh htop
+# sudo apt install tmux zsh htop -y
+
+#sudo apt install tmux
+#tmux
 
 # Install oh-my-zsh
-cd ~
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-echo 'ZSH_THEME="gnzh"' >> .zshrc
+#cd ~
+#sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+#echo 'ZSH_THEME="gnzh"' >> .zshrc
 
 # Install Anaconda3
 mkdir ~/downloads
@@ -28,7 +31,7 @@ conda env update
 sudo apt-get purge nvidia*
 sudo add-apt-repository ppa:graphics-drivers/ppa -y
 sudo apt update
-sudo apt install nvidia-396
+sudo apt install nvidia-396 -y
 
 # Install cuda
 cd ~/downloads/
@@ -54,6 +57,6 @@ sudo cp cuda/lib64/*.* /usr/local/cuda/lib64/
 #sudo apt-get install python3-pip python3-dev
 # Install keras
 
-sudo apt upgrade
+sudo apt upgrade -y
 
 sudo reboot
